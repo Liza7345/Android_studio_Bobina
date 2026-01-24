@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:drawable/edit_text"
-    android:backgroundTint="#FFEB3B"
+    android:background="@android:drawable/screen_background_light"
+    android:backgroundTint="#FFE700"
     tools:context=".MainActivity">
 
     <TextView
