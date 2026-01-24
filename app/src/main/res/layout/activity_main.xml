@@ -6,10 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:drawable/screen_background_light"
-    android:backgroundTint="#FFE700"
+    android:backgroundTint="#FFF47E"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/diceResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
@@ -21,11 +22,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="232dp"
-        android:backgroundTint="#03A9F4"
+        android:backgroundTint="#673AB7"
         android:backgroundTintMode="add"
         android:text="Нажмите, чтобы бросить кубик"
         android:textSize="20sp"
