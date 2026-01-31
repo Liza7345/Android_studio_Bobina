@@ -1,33 +1,37 @@
 package com.example.first_app_Bobina
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.first_app_Bobina.databinding.ActivityMainBinding
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var diceResult: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
         enableEdgeToEdge()
-        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { v, insets ->
+        setContentView(R.layout.activity_main)
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        binding.btnStart.setOnClickListener {
-            val diceValue = Random.nextInt(1, 7)
-            binding.diceResult.text = diceValue.toString()
+        diceResult = findViewById(R.id.diceResult)
+        // тип Button
+        val rollButton: Button = findViewById(R.id.btnStart)
+        rollButton.setOnClickListener {
+            rollDice()
         }
+    }
+
+    private fun rollDice() {
+        val diceValue = Random.nextInt(1, 7)
+        diceResult.text = diceValue.toString()
     }
 }
