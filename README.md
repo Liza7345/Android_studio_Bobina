@@ -1,7 +1,5 @@
 <h1>Приложение: "Бросок кубика с случайными числами от 1 до 6."</h1>
 <br>
 Разработчик: Бобина Елизавета Сергеевна
-<br>
-Выполнен только Дизайн приложения. Код не редактировался в ручную. 
-<br>
-<img width="203" height="361" alt="image" src="https://github.com/user-attachments/assets/f79dc7f3-6530-4fbf-a8c5-b934d7d34365" />
+<img width="244" height="536" alt="image" src="https://github.com/user-attachments/assets/f5da3b59-3af2-40b6-8c30-39b9ad92e0a9" />
+
