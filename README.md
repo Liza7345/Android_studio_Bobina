@@ -3,6 +3,8 @@
 Разработчик: Бобина Елизавета Сергеевна
 <img width="244" height="536" alt="image" src="https://github.com/user-attachments/assets/f5da3b59-3af2-40b6-8c30-39b9ad92e0a9" />
 <br>
+<br>
+<br>
 Дополнение. Что использовала в MainActivity.kt:<br>
 <b>onCreate()</b> - вызывается при создании Activity<br>
 <b>savedInstanceState</b> - сохраненное состояние<br>
